@@ -27,13 +27,7 @@ const Addbooks = () => {
     console.log(book);
   };
 
-  // const deletebook = (number) => {
-  //       const filterbook = books.filter((element,index) => {
-  //     return element.number !== number;
-  //   });
-
-  //   setBooks(filterbook);
-  // };
+ 
   const deleteBook = (number) => {
     const filterBooks = books.filter((element,index)=> {
       return element.number !== number;
@@ -101,8 +95,8 @@ const Addbooks = () => {
 books.length > 0 &&  <>
       
              
-        <div className="bg-pink-500 w-[500px] text-center mt-[60px] flex jusity-betvin ">
-          <table className="   bg-blue-200 w-full p-3">
+        <div className=" w-[500px] text-center mt-[60px] flex jusity-betvin ">
+          <table className="   bg-blue-200 w-full p-3 mb-[50px]">
             <thead className="">
               <tr className="flex  justify-around  border-b-4  border-indigo-900 m-5">
                 <th> عنوان</th>
@@ -123,7 +117,7 @@ books.length > 0 &&  <>
      
 
  {books.length < 1 && (
-              <h1 className="text-xl w-[500px]  mt-10  bg-pink-300 p-5 text-center">no books in the librari</h1>
+              <h1 className="text-xl w-[500px]  mt-10  bg-pink-400 p-5 text-center">no books in the librari</h1>
             )}
     </>
   );
